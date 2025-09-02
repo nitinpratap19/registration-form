@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        table
+        {
+            border-color: black;
+            border-width: 0.15rem;
+            background-color: rgb(245, 226, 204);
+            border-color: black;
+            width: 30rem;
+        }
+        th
+        {
+            text-align: center;
+            background-color: rgb(150, 163, 130);
+            width:10rem;
+        }
+        iframe
+        {
+            border-color: black;
+            background-color: rgb(233, 216, 196);
+            width: 30rem;
+        }
+    </style>
+</head>
+<body>
+
+    <h1><b>Registration Form</b></h1>
+
+    <table border="black" >
+        <form action="#">
+            <tr>
+            <th colspan="8">Personal Details</th>
+            </tr>
+            <div>
+            <tr>
+                <td>First Name:*</td>
+                <td>
+                        <input type="text" name="fname" placeholder="Enter your first name" id="fname" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Last Name:*</td>
+                <td>
+                        <input type="text" name="lname" placeholder="Enter your last name" id="lname" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Email:*</td>
+                <td>
+                        <input type="email" name="email" placeholder="Enter email" id="email" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Phone Number:</td>
+                <td>
+                        <input type="number" name="phone" placeholder="Enter number" id="phone" maxlength="10">
+                </td>
+            </tr>
+            </div>
+            <tr>
+                <th colspan="8">Account Details</th>
+            </tr>
+            <tr>
+                <td>Username:*</td>
+                <td>
+                        <input type="text" name="username" placeholder="Enter your username" id="username" min="5" max="15" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Password:*</td>
+                <td>
+                        <input type="password" name="password" placeholder="Enter password" id="password" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Confirm Password:*</td>
+                <td>
+                        <input type="password" name="cpassword" placeholder="Confirm password" id="cpassword"  required>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="8">Address</th>
+            </tr>
+            <tr>
+                <td>Address Line 1:*</td>
+                <td>
+                    <textarea row="1" cols="20" required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Address Line 2:</td>
+                <td>
+                    <textarea row="1" cols="20"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>City:*</td>
+                <td>
+                        <input type="text" name="city" placeholder="Enter City" id="city" required>
+                </td>
+            </tr>
+            <tr>
+                <td>State:*</td>
+                <td>
+                        <select name="state" id="state" required>
+                            <option value="">Select your state</option>
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                            <option value="Uttarakhand">Uttarakhand</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                            <option value="Telangana">Telangana</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Zip Code:*</td>
+                <td>
+                        <input type="number" name="zip" id="zip" maxlength="5" required>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="8">Preferences</th>
+            </tr>
+            <tr>
+                <td>Gender:*</td>
+                <div>
+                    <td>
+                        
+                            <input type="radio" name="gender" id="male">Male
+                            <input type="radio" name="gender" id="female">Female
+                            <input type="radio" name="gender" id="other">Other
+                        
+                    </td>
+                </div>
+            </tr>
+            <tr>
+                <td>Subscribe Newsletter:</td>
+                <td>
+                        <input type="checkbox" name="newsl" id="newsl">Yes
+                </td>
+            </tr>
+            <tr>
+                <td>Short Bio:</td>
+                <td>
+                    <textarea row="2" cols="30"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="8" bgcolor="white">
+                <input type="checkbox" name="terms" id="terms" required>I agree to the Terms and Conditions*
+                </th>
+            </tr>
+            <tr>
+                <th colspan="8" bgcolor="white">
+                    <button type="submit" name="submit" id="submit">Submit</button>
+                    <button type="reset" name="reset" id="reset">Reset</button>
+                </th>
+            </tr>
+        </form>
+
+    </table>
+    <hr>
+    <iframe srcdoc="<h3><b>Terms and Conditions</b></h3>
+        <p>Welcome to our registration portal. By registering, you agree to the following terms and conditions:</p>
+        <ul>
+            <li>You must provide accurate and complete information.</li>
+            <li>Your password must be confidential.</li>
+            <li>We reserve the right to cancel accounts that violate our policies.</li>
+            <li>All data is processed according to our privacy policy.</li>
+            <li>Use the form responsibly.</li>
+        </ul>" width="400px" height="200px">
+    </iframe>
+        
+            
+        
+    </iframe>
+    
+</body>
+</html>
